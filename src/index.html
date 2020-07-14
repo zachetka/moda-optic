@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мода-Оптик</title>
+    <link rel="stylesheet" href="/dist/assets/css/app.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="hamburger-menu">
+            <input id="toggle" class="hamburger-menu__toggle" type="checkbox" />
+            <label class="hamburger-menu__button" for="toggle">
+                <span  class="hamburger-menu__line" ></span>
+                <span  class="hamburger-menu__line" ></span>
+                <span  class="hamburger-menu__line" ></span> 
+            </label>            
+            <ul class="hamburger-menu__list">
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Каталог</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">О компании</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Омс</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Акции</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Розничная сеть</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Партнеры</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Контакты</a></li>
+                <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link hamburger-menu__link_last">Подбор очков</a></li>
+                <li class="hamburger-menu__item"><a href="tel:8184529633" class="hamburger-menu__link hamburger-menu__link_phone">(8184) 52-96-33</a></li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header-top">
+                <div class="header-info">
+                    <a href="#" class="header-info__link">
+                        <svg class="header-info__icon" width="16" height="12"><use xlink:href="src/img/sprite.svg#glasses"></use></svg>
+                        Версия для слабовидящих
+                    </a>
+                    <a href="#" class="header-info__link">
+                        <svg class="header-info__icon" width="11" height="12"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                        Сравнение товаров
+                    </a>
+                    <div class="header-social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link" title="Instagram">
+                                    <svg class="social__icon" width="12" height="12"><use xlink:href="src/img/sprite.svg#instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link" title="Twitter">
+                                    <svg class="social__icon" width="15" height="12"><use xlink:href="src/img/sprite.svg#twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link" title="VK">
+                                    <svg class="social__icon" width="22" height="12"><use xlink:href="src/img/sprite.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <ul class="header-actions__list">
+                        <li class="header-actions__item"><a href="#" class="header-actions__link">Оплата</a></li>
+                        <li class="header-actions__item"><a href="#" class="header-actions__link">Доставка</a></li>
+                        <li class="header-actions__item"><a href="#" class="header-actions__link header-actions__link_last">Возврат и обмен</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <a href="#" class="header-logo"><img src="src/img/logo.png" alt="Мода-Оптик" class="header-logo__image"></a>
+                <a href="tel:8184529633" class="header-phone phone">(8184) 52-96-33</a>
+                <form class="header-search">
+                    <input type="text" placeholder="Искать" class="header-search__input">
+                    <button type="submit" class="header-search__button">
+                        <svg class="header-search__icon" width="16" height="16"><use xlink:href="src/img/sprite.svg#search"></use></svg>                        
+                    </button>
+                </form>
+                <div class="header-profile">
+                    <a href="#" class="header-profile__link">                        
+                        <img src="src/img/icon_profile.png" alt="" class="header-profile__icon">
+                        <span class="header-profile__text">Вход/Регистрация</span>
+                    </a>
+                    <a href="#" id="cart" class="header-profile__link">                        
+                        <img src="src/img/icon_cart.png" alt="" class="header-profile__icon">
+                        <span class="header-profile__text">Корзина&nbsp;</span>(<span class="header-profile__count">0</span>)
+                    </a>
+                </div>
+            </div>
+
+            <nav class="header-menu">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Омс</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Розничная сеть</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Партнеры</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Подбор очков</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="main">
+            <section class="slider">
+                <div class="slider-wrapper">
+                    <div class="slider-items">
+                        <div class="slider-item">
+                            <div class="slider-item__content">
+                                <h2 class="slider-item__title title">Новая коллекция солнечных очков</h2>
+                                <p class="slider-item__description description">Весь ассортимент популярного бренда в
+                                    нашем интернет-магазине</p>
+                                <a href="#" class="slider-item__button link-button">Перейти в каталог</a>
+                            </div>
+                            <div class="slider-item__image"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item__content">
+                                <h2 class="slider-item__title title">Новая коллекция солнечных очков</h2>
+                                <p class="slider-item__description description">Весь ассортимент популярного бренда в
+                                    нашем интернет-магазине</p>
+                                <a href="#" class="slider-item__button link-button">Перейти в каталог</a>
+                            </div>
+                            <div class="slider-item__image"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item__content">
+                                <h2 class="slider-item__title title">Новая коллекция солнечных очков</h2>
+                                <p class="slider-item__description description">Весь ассортимент популярного бренда в
+                                    нашем интернет-магазине</p>
+                                <a href="#" class="slider-item__button link-button">Перейти в каталог</a>
+                            </div>
+                            <div class="slider-item__image"></div>
+                        </div>
+                        <div class="slider-arrows">
+                            <div id="prev" class="slider-arrows__item slider-arrows__item_prev">
+                                <svg class="slider-arrows__icon" width="10" height="27">
+                                    <use xlink:href="src/img/sprite.svg#arrow-left"></use>
+                                </svg>
+                            </div>
+                            <div id="next" class="slider-arrows__item slider-arrows__item_next">
+                                <svg class="slider-arrows__icon" width="10" height="27">
+                                    <use xlink:href="src/img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="dots-block" class="slider-dots">
+                            <div class="slider-dots__item slider-dots__item_active"></div>
+                            <div class="slider-dots__item"></div>
+                            <div class="slider-dots__item"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="selection">
+                <div class="selection-wrapper">
+                    <div class="selection-text">
+                        <h2 class="selection-text__title title">Подбор очков</h2>
+                        <p class="selection-text__description description">Поможем Вам подобрать очки, с нужными
+                            характеристиками из нашего огромного ассортимента</p>
+                        <a href="#" class="selection-text__button link-button">Подобрать</a>
+                    </div>
+                    <div class="selection-image">
+                        <img src="src/img/selection-glasses.png" alt="Очки">
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <h2 class="products__title title">Популярные товары</h2>
+                <div class="products-carousel">
+                    <div class="products-cards">
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-davidoff.png" alt="DAVIDOFF">
+                                    <div class="products-card__label">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">DAVIDOFF Urban Coolness Sunglasses</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price">14500 руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-acuvue.png" alt="ACUVUE">
+                                    <div class="products-card__label products-card__label_disabled">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">ACUVUE OASYS with HydraLuxe (30 линз)</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price products-card__old-price_disabled">14500
+                                        руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-bulgari.png" alt="BULGARI">
+                                    <div class="products-card__label">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">BULGARI NV-2345 Sunglasses</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price products-card__old-price_disabled">14500
+                                        руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-davidoff.png" alt="DAVIDOFF">
+                                    <div class="products-card__label products-card__label_disabled">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">DAVIDOFF Urban Coolness Sunglasses</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price">14500 руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-acuvue.png" alt="ACUVUE">
+                                    <div class="products-card__label products-card__label_disabled">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">ACUVUE OASYS with HydraLuxe (30 линз)</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price products-card__old-price_disabled">14500
+                                        руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <div class="products-card__info">
+                                <div class="products-card__image">
+                                    <img src="src/img/product-bulgari.png" alt="BULGARI">
+                                    <div class="products-card__label">Новинка</div>
+                                </div>
+                                <h3 class="products-card__title">BULGARI NV-2345 Sunglasses</h3>
+                            </div>
+                            <div class="products-card__actions">
+                                <div class="products-card__price">14500 руб. <span
+                                        class="products-card__old-price products-card__old-price_disabled">14500
+                                        руб.</span></div>
+                                <button type="button" class="products-card__btn products-card__btn_square">
+                                    <svg class="products-card__icon" width="15" height="17"><use xlink:href="src/img/sprite.svg#graphic"></use></svg>
+                                </button>
+                                <button type="button" class="products-card__btn products-card__btn_cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-arrows">
+                        <div id="arrow-left" class="products-arrows__item products-arrows__item_prev">
+                            <svg class="products-arrows__icon" width="10" height="27">
+                                <use xlink:href="src/img/sprite.svg#arrow-left"></use>
+                            </svg>
+                        </div>
+                        <div id="arrow-right" class="products-arrows__item products-arrows__item_next">
+                            <svg class="products-arrows__icon" width="10" height="27">
+                                <use xlink:href="src/img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="promotions">
+                <div class="promotions-wrapper">
+                    <div class="promotions-top">
+                        <h2 class="promotions-top__title title">Акции</h2>
+                        <a href="#" class="promotions-top__link">Все акции
+                            <svg class="promotions-top__icon" width="5" height="8">
+                                <use xlink:href="src/img/sprite.svg#arrow"></use>
+                            </svg>                            
+                        </a>
+                    </div>
+                    <div class="promotions-main">
+                        <div class="promotions-card promotions-card_left">
+                            <div class="promotions-card__text">
+                                <h3 class="promotions-card__title">Скидка 25% на очки DAVIDOFF</h3>
+                                <p class="promotions-card__description description">На все очки DAVIDOFF весенней
+                                    коллекции</p>
+                                <a href="#" class="promotions-card__link link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="promotions-card promotions-card_right">
+                            <div class="promotions-card__text">
+                                <h3 class="promotions-card__title">Акция при покупке детских очков</h3>
+                                <p class="promotions-card__description description">Оправа для очков со скидкой 50%</p>
+                                <a href="#" class="promotions-card__link link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="company">
+                <div class="company-wrapper">
+                    <div class="company-text">
+                        <h2 class="company-text__title title">О компании</h2>
+                        <p class="company-text__description description">Открытие в 2003 году ООО” Оптик – Центр” стало
+                            большим событием в оказании медицинской помощи населению города и предоставило возможность
+                            нашим клиентам проверить зрение без записи и очередей.</p>
+                        <p class="company-text__description description">Основным направлением нашей деятельности
+                            является оказание качественных услуг по проверке зрения, подбору контактных линз и
+                            диагностике заболеваний глаз. Мы ведем индивидуальную работу с каждым клиентом, независимо
+                            от возраста и социального статуса.</p>
+                        <p class="company-text__description company-text__description_last description">Наши высококвалифицированные специалисты имеют
+                            большой опыт работы в сфере здравоохранения, решают различные проблемы со зрением, постоянно
+                            участвуют в семинарах по современным методам коррекции зрения и съездах офтальмологов
+                            России.</p>
+                        <a href="#" class="company-text__link link">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrapper grid">
+                <div class="footer-logo">
+                    <a href="#" class="footer-logo__link"><img src="src/img/logo.png" alt="Мода-Оптик"
+                            class="footer-logo__image"></a>
+                </div>
+                <nav class="footer-menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Омс</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Розничная сеть</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Партнеры</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_last">Подбор очков</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-requisites">
+                    <div class="footer-info">ООО «Оптик-Центр»<br>ОГРН 1032901007853</div>
+                    <div class="footer-info">164500, г. Северодвинск,<br>ул. Ломоносова, д. 73</div>
+                    <div class="footer-info">Информация на сайте<br>не является публичной офертой<br>и носит справочный
+                        характер.</div>
+                </div>
+                <div class="footer-shops">
+                    <h4 class="footer-subtitle">Магазины</h4>
+                    <div class="footer-info">164500, г. Северодвинск,<br>ул. Советская, д. 50/12</div>
+                    <div class="footer-info">163000, г. Архангельск,<br>ул. набережная Северной Двины, д. 93</div>
+                </div>
+                <div class="footer-contacts">
+                    <h4 class="footer-subtitle">Контактная информация</h4>
+                    <a href="tel:8184529633" class="footer-phone phone">(8184) 52-96-33</a>
+                    <a href="mail:office@moda-optic.ru" class="footer-link">office@moda-optic.ru</a>
+                    <div class="footer-social">
+                        <span class="footer-info footer-info_small">Мы в соц.сетях:</span>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link" title="Instagram">
+                                    <svg class="social__icon" width="12" height="12"><use xlink:href="src/img/sprite.svg#instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link" title="Twitter">
+                                    <svg class="social__icon" width="15" height="12"><use xlink:href="src/img/sprite.svg#twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social__item social__item_last">
+                                <a href="#" class="social__link" title="VK">
+                                    <svg class="social__icon" width="22" height="12"><use xlink:href="src/img/sprite.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-subscribe">
+                    <div class="footer-info footer-info_big">Подпишитесь на наши новости и акции, чтобы быть в курсе
+                    </div>
+                    <form class="footer-subscribe__form">
+                        <input type="email" placeholder="Ваш e-mail" class="footer-subscribe__input">
+                        <button type="submit" class="footer-subscribe__button">
+                            <svg class="footer-subscribe__icon" width="6" height="11">
+                                <use xlink:href="src/img/sprite.svg#arrow"></use>
+                            </svg> 
+                        </button>
+                        <a href="#" class="footer-link">Договор оферты</a>
+                        <a href="#" class="footer-link">Политика конфиденциальности</a>
+                    </form>
+                </div>
+                <div class="footer-agreement">
+                    <div class="footer-info footer-info_big">Интернет-магазин “Мода-оптик”. <a href="#"
+                            class="footer-agreement__link">Пользовательское соглашение</a></div>
+                    <div class="footer-info footer-info_big footer-info_disabled">Имеются противопоказания, необходимо проконсультироваться
+                        со специалистом</div>
+                </div>
+                <div class="footer-payment">
+                    <span class="footer-info footer-info_small">Принимаем к оплате:</span>
+                    <ul class="footer-payment__list">
+                        <li class="footer-payment__item"><img src="src/img/visa.png" alt="Visa"></li>
+                        <li class="footer-payment__item"><img src="src/img/mastercard.png" alt="MasterCard"></li>
+                        <li class="footer-payment__item"><img src="src/img/maestro.png" alt="Maestro"></li>
+                        <li class="footer-payment__item"><img src="src/img/mir.png" alt="Мир"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/dist/assets/js/app.js"></script>
+</body>
+
+</html>

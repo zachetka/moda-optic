@@ -1,0 +1,61 @@
+.selection {     
+    padding: 100px 30px;  
+    @media (max-width: $screen-lg) {
+        padding: 20px 15px 35px;  
+    }       
+    &-wrapper {
+        padding: 70px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url('/src/img/selection-bg.jpg') center center/cover no-repeat;  
+        @media (max-width: $screen-md) {
+            padding: 50px 15px; 
+        }        
+        @media (max-width: $screen-sm) {
+            flex-direction: column;
+            justify-content: start;  
+            align-items: start;
+            padding: 26px 30px;
+        }  
+    }
+    &-text {
+        flex-basis: 50%;
+        padding-left: 90px;
+        @media (max-width: $screen-lg) {
+            padding-left: 60px; 
+        }   
+        @media (max-width: $screen-sm) {
+            flex-basis: 100%;
+            padding-left: 0;
+        }    
+        &__title {
+            color: $default-color;            
+        }
+        &__description {
+            margin-top: 40px;
+            max-width: 560px;  
+            @media (max-width: $screen-sm) {                
+                margin-top: 15px;
+            }              
+        }
+        &__button {
+            margin-top: 23px;            
+        }
+    }
+    &-image {
+        padding: 0 50px;
+        @media (max-width: $screen-lg) {
+            padding: 0 20px 0 70px; 
+        } 
+        @media (max-width: $screen-md) {
+            padding: 0 20px; 
+        } 
+        @media (max-width: $screen-sm) {
+            order: -1;
+            padding: 0; 
+            width: 65%;
+            margin-bottom: 30px;      
+        }     
+    }
+}

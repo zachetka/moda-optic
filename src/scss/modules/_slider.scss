@@ -1,0 +1,163 @@
+.slider { 
+    padding: 50px 30px 0;
+    @media (max-width: $screen-lg) {
+        padding: 21px 15px 0;  
+    }      
+    &-items {
+        position: relative;
+        height: 548px;        
+        @media (max-width: $screen-md) {
+            height: 350px;
+        } 
+        @media (max-width: $screen-sm) {
+            height: 239px;
+        }  
+    }
+    &-item {        
+        width: 100%;
+        display: flex;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s; 
+        &__content {
+            width: 45%;
+            height: 100%;
+            background: url('/src/img/rectangle-bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 90px;       
+            @media (max-width: $screen-lg) {
+                width: 50%;
+                padding: 0 60px; 
+            }      
+            @media (max-width: $screen-md) {
+                width: 100%;
+            }   
+            @media (max-width: $screen-sm) {
+                padding: 0 30px; 
+            } 
+        }
+        &__image {
+            width: 55%;
+            height: 100%;
+            background: url('/src/img/slider-image.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;  
+            @media (max-width: $screen-md) {
+                display: none;
+            } 
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 43px;
+            letter-spacing: 0.05em;
+            margin-bottom: 26px;
+            color: $default-color;
+            @media (max-width: $screen-lg) {
+                font-size: 35px;
+            }  
+            @media (max-width: $screen-sm) {
+                font-size: 20px;
+                line-height: 22px;
+            } 
+        }
+        &__description {
+            max-width: 353px;            
+        }
+        &__button {            
+            margin-top: 21px;         
+        } 
+    }
+    &-arrows {
+        &__item {           
+            position: absolute;
+            top: 50%;                    
+            z-index: 99;
+            cursor: pointer;
+            @media (max-width: $screen-md) {
+                top: 45%;
+            }  
+            &_prev {
+                left: 40px;
+                @media (max-width: $screen-lg) {
+                    left: 20px;
+                }  
+                @media (max-width: $screen-sm) {
+                    left: 8px;
+                } 
+            }
+            &_next {
+                right: 40px;
+                @media (max-width: $screen-lg) {
+                    right: 20px; 
+                }  
+                @media (max-width: $screen-sm) {
+                    right: 8px;
+                } 
+            }
+        }
+        &__icon {
+            fill: $default-color;
+            @media (max-width: $screen-sm) {
+                width: 4px;
+                height: 12px;
+            } 
+        }
+    } 
+    &-dots {
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 70px;
+        left: 120px;        
+        transform: translateX(-50%);
+        @media (max-width: $screen-lg) {
+            bottom: 60px;
+            left: 90px;
+        }  
+        @media (max-width: $screen-md) {
+            display: none;
+        } 
+        &__item {
+            width: 10px;
+            height: 10px;            
+            margin-right: 7px;            
+            border: none;
+            border-radius: 50%;
+            background: none;
+            transition: background-color 0.6s ease;
+            border: 1px solid #fff;
+            cursor: pointer;
+            outline: none;
+            &_active {
+                background: #fff;
+            }
+        }
+    }      
+}
+  
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}

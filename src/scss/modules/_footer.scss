@@ -1,0 +1,196 @@
+.grid {
+    display: grid;
+    grid-template-areas: "logo menu menu menu" "requisites shops contacts subscribe" "agreement agreement agreement payment";
+    grid-template-columns: 25% 25% 25% 25%;    
+    justify-content: space-between;
+    @media (max-width: $screen-xl) {
+        grid-template-areas: "logo logo" "menu menu" "shops contacts" "requisites subscribe" "agreement payment"; 
+        grid-template-columns: 48% 48%;  
+    }   
+    @media (max-width: $screen-md) {
+        grid-template-areas: "logo" "menu" "contacts" "agreement"; 
+        grid-template-columns: 100%;  
+    }     
+}
+
+.footer {    
+    padding: 100px 30px;
+    @media (max-width: $screen-xl) {
+        padding: 70px 20px 50px;
+    }    
+    @media (max-width: $screen-lg) {
+        padding: 0 15px 50px;
+    }  
+    &-subtitle {
+        margin-bottom: 28px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #13107A;
+        @media (max-width: $screen-md) {
+            display: none;
+        }  
+    }
+    &-info {
+        margin-bottom: 21px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark-color;
+        &_small {
+            margin: 0 15px 0 0;
+            font-weight: 300;
+            font-size: 14px;
+            color: $primary-color;
+            @media (max-width: $screen-md) {
+                display: none;
+            }  
+        }
+        &_big {
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: $dark-color;
+            @media (max-width: $screen-md) {
+                margin-top: 14px;
+                font-size: 12px;
+                line-height: 17px;
+            }   
+        }
+        &_disabled {
+            @media (max-width: $screen-md) {
+                display: none;
+            }  
+        }
+    }    
+    &-link {
+        margin: 15px 0;
+        display: block;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #13107A;
+        &:hover {
+            color: $active-color;
+        }
+    }
+    &-logo {
+        grid-area: logo;    
+        align-self: center;    
+        @media (max-width: $screen-xl) {
+            margin: auto; 
+            margin-bottom: 40px;
+        }   
+        @media (max-width: $screen-md) {
+            max-width: 145px;
+        }                  
+    }
+    &-menu {
+        grid-area: menu;
+        align-self: center;
+        @media (max-width: $screen-md) {
+            align-self: stretch;
+        }  
+    }
+    &-requisites {
+        grid-area: requisites;
+        margin-top: 52px;  
+        @media (max-width: $screen-md) {
+            display: none;
+        }       
+    }
+    &-shops {
+        grid-area: shops;
+        margin-top: 52px;  
+        @media (max-width: $screen-md) {
+            display: none;
+        }            
+    }
+    &-contacts {
+        grid-area: contacts;
+        margin-top: 52px;
+        @media (max-width: $screen-md) {
+            margin: auto;
+            text-align: center;
+            margin-top: 43px;
+        }  
+    }
+    &-social {
+        display: flex;
+        @media (max-width: $screen-md) {
+            justify-content: center;
+            margin: 30px 0;
+        }  
+    }
+    &-subscribe {
+        grid-area: subscribe;
+        margin-top: 52px;
+        @media (max-width: $screen-md) {
+            display: none;
+        }  
+        &__form {
+            position: relative;
+            max-width: 274px;
+            margin: 23px 0;            
+        }
+        &__input {        
+            width: 100%;
+            font-size: 14px;
+            line-height: 18px;
+            color: $primary-color;
+            background: $product-color;
+            border: 0px;
+            outline: none; 
+            padding: 11px 0px 11px 18px;   
+        }
+        &__button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14.5px 17px;        
+            border: 0px;
+            outline: none;
+            background: linear-gradient(228.78deg, rgba(40, 38, 150, 0.96) 0%, #09abe4 100%);
+            cursor: pointer;
+        }
+        &__icon {
+            fill: $default-color;
+        }        
+    }
+    &-agreement {        
+        grid-area: agreement;
+        align-self: end;       
+        margin-top: 12px; 
+        @media (max-width: $screen-md) {
+            margin-top: 0; 
+            border-top: 1px solid $product-color;
+        }  
+        &__link {
+            color: $active-color;
+            &:hover {
+                color: $bright-color;                
+            }
+        }        
+    }
+    &-payment {
+        grid-area: payment;
+        align-self: end; 
+        display: flex;
+        @media (max-width: $screen-md) {
+            display: none;
+        }  
+        &__list {
+            display: flex;
+        }
+        &__item {
+            margin-left: 4px;
+        }
+    }    
+}
+

@@ -1,0 +1,185 @@
+.header {
+    padding: 18px 30px 0;  
+    @media (max-width: $screen-lg) {
+        padding: 24px 15px 0;  
+    }      
+
+    &-top {
+        display: flex;
+        justify-content: space-between; 
+        @media (max-width: $screen-lg) {
+            display: none;
+        }       
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & a:nth-of-type(1) {
+            padding-left: 0;
+        }
+        &__icon {
+            fill: $primary-color;
+            margin-right: 10px;
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            font-weight: 600;
+            font-size: 12px;
+            color: $primary-color;
+            border-right: 1px solid $border-color;
+            &:hover {
+                color: $bright-color;
+                & svg {
+                    fill: $bright-color;
+                }
+            }
+        }
+    }
+
+    &-social {
+        margin-left: 30px;
+    }
+
+    &-actions {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__link {
+            padding: 0 25px;
+            border-right: 1px solid $border-color;
+            font-weight: 400;
+            font-size: 12px;
+            color: $primary-color;                        
+            &:hover {
+                color: $hover-color;
+            }
+            &_last {
+                padding-right: 0;
+                border-right: none;
+            }
+        }      
+    }
+
+    &-main {
+        margin-top: 59px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        @media (max-width: $screen-lg) {
+            margin-top: 0;            
+        }       
+        @media (max-width: $screen-sm) {
+            flex-wrap: wrap;  
+        }
+    }  
+    
+    &-logo {
+        &__image {
+            @media (max-width: $screen-lg) {
+                width: 150px;
+                margin-left: 50px;
+            }     
+            @media (max-width: $screen-sm) {
+                width: 100px;
+            }  
+        }
+    }
+
+    &-phone {
+        @media (max-width: $screen-lg) {
+            font-size: 18px;
+        }  
+        @media (max-width: $screen-md) {
+            display: none;
+        }       
+    }
+
+    &-search {        
+        min-width: 292px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative; 
+        @media (max-width: $screen-lg) {
+            min-width: 250px;
+        }  
+        @media (max-width: $screen-sm) {
+            order: 4;
+            margin-top: 21px;
+            min-width: 100%;
+        }              
+        &__input {
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid #e3e3e3;
+            width: 100%;
+            padding-bottom: 8px;
+            &:focus {
+                border-bottom: 1px solid $active-color;                
+            }
+        }
+        &__button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        &__icon {
+            fill: $primary-color;
+            &:hover {
+                fill: $active-color;
+            }
+        }
+    }
+
+    &-profile {
+        display: flex;        
+        &__link {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-right: 1px solid $border-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $dark-color;
+            @media (max-width: $screen-xl) {
+                padding-left: 0;
+                border-right: none;
+            }
+
+            &:nth-of-type(2) {
+                padding-right: 0;
+                border-right: none;
+            }
+            &:hover {
+                color: $hover-color;
+            }
+        }
+        &__icon {
+            margin-right: 12px;   
+            fill: url(#linear);         
+        }
+        &__text {
+            @media (max-width: $screen-xl) {
+                display: none;
+            }
+        }
+    }
+
+    &-menu {
+        margin-top: 61px;
+        @media (max-width: $screen-lg) {
+            display: none;
+        }  
+    }
+}

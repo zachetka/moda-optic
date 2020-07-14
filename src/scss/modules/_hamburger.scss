@@ -1,0 +1,93 @@
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    @media (max-width: $screen-lg) {
+        display: block;
+    }
+    &__toggle {
+        opacity: 0;
+        &:checked ~ label span:nth-last-child(3) {
+            opacity: 1;
+            transform: rotate(45deg) translate(0px, -1px) scaleX(1.25);
+            background: $active-color;
+        }
+        &:checked ~ label span:nth-last-child(2) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        &:checked ~ label span:nth-last-child(1) {
+            transform: rotate(-45deg) translate(0, -1px) scaleX(1.25);
+        }
+        &:checked ~ ul {
+            transform: none;
+        }
+    }
+    &__button {
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-start; 
+        position: absolute;
+        top: 31px;
+        left: 15px;    
+        width: 40px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 101;
+    }
+    &__line {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;        
+        background: $active-color;
+        border-radius: 3px;        
+        z-index: 1;        
+        transform-origin: 4px 0px;        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
+        &:nth-child(2) {
+            width: 10px;
+        }
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+        &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+    }
+    &__list {
+        position: absolute;        
+        min-width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;        
+        padding: 60px 50px;        
+        background: $default-color;        
+        z-index: 100;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);  
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);                          
+    }   
+    &__link {
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $dark-color;
+        border-bottom: 1px solid $product-color;
+        &:hover {
+            color: $bright-color;
+        }
+        &_last {
+            border: none;
+        }
+        &_phone {
+            border: none;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    } 
+}

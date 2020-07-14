@@ -1,0 +1,94 @@
+.promotions {    
+    padding: 100px 30px 0;
+    @media (max-width: $screen-lg) {
+        padding: 20px 15px 0;  
+    }     
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__link {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: $active-color;
+            @media (max-width: $screen-sm) {
+                font-size: 12px;
+                line-height: 14px;
+            }  
+            &:hover {
+                color: $bright-color;
+                & svg path {
+                    fill: #282696;
+                }
+            }
+        }
+        &__icon {
+            fill: $active-color;
+            margin-left: 12px;
+            @media (max-width: $screen-sm) {
+                margin-left: 5px;
+            }  
+        }
+    }
+    &-main {        
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between; 
+        @media (max-width: $screen-lg) {
+            margin-top: 14px;
+        }    
+    } 
+    &-card {
+        width: 49%;
+        height: 440px;                
+        display: flex;
+        align-items: flex-end;
+        @media (max-width: $screen-sm) {
+            height: 290px;  
+        }    
+        &_left {
+            background: url('/src/img/promotion_1.jpg') center center/cover no-repeat;
+            @media (max-width: $screen-md) {
+                width: 100%;
+            }   
+        }   
+        &_right {
+            background: url('/src/img/promotion_2.jpg') center center/cover no-repeat;
+            @media (max-width: $screen-md) {
+                display: none;
+            }   
+        }          
+        &__text {
+            width: 100%;
+            background: linear-gradient(202.4deg, rgba(40, 38, 150, 0.85) 46.3%, #09abe4 121.3%);
+            opacity: 0.8;
+            backdrop-filter: blur(10px);
+            padding: 25px 50px;            
+            background-color: blue;   
+            @media (max-width: $screen-sm) {
+                padding: 10px 15px;   
+            }               
+        }
+        &__title {
+            margin-bottom: 17px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: $default-color;      
+            @media (max-width: $screen-sm) {
+                margin-bottom: 8px; 
+                font-size: 14px;
+                line-height: 17px;
+            }          
+        }
+        &__description {
+            margin-bottom: 16px;
+            @media (max-width: $screen-sm) {
+                margin-bottom: 4px; 
+            }   
+        }        
+    }        
+}
