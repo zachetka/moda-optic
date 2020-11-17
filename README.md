@@ -1,3 +1,3 @@
-# Landing page для салона оптики
-
+# moda-optic
+Landing page для салона оптики.
 Запуск в режиме разработки npm run dev. 
